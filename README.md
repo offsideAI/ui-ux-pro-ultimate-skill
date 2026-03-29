@@ -1,17 +1,17 @@
-# [UI UX Pro Max](https://uupm.cc)
+# [UI UX Pro Ultimate](https://uupm.cc)
  
 <p align="center">
-  <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/releases"><img src="https://img.shields.io/github/v/release/nextlevelbuilder/ui-ux-pro-max-skill?style=for-the-badge&color=blue" alt="GitHub Release"></a>
+  <a href="https://github.com/offsideAI/ui-ux-pro-ultimate-skill/releases"><img src="https://img.shields.io/github/v/release/offsideAI/ui-ux-pro-ultimate-skill?style=for-the-badge&color=blue" alt="GitHub Release"></a>
   <img src="https://img.shields.io/badge/reasoning_rules-161-green?style=for-the-badge" alt="161 Reasoning Rules">
   <img src="https://img.shields.io/badge/UI_styles-67-purple?style=for-the-badge" alt="67 UI Styles">
   <img src="https://img.shields.io/badge/python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.x">
-  <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/LICENSE"><img src="https://img.shields.io/github/license/nextlevelbuilder/ui-ux-pro-max-skill?style=for-the-badge&color=green" alt="License"></a>
+  <a href="https://github.com/offsideAI/ui-ux-pro-ultimate-skill/blob/main/LICENSE"><img src="https://img.shields.io/github/license/offsideAI/ui-ux-pro-ultimate-skill?style=for-the-badge&color=green" alt="License"></a>
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/uipro-cli"><img src="https://img.shields.io/npm/v/uipro-cli?style=flat-square&logo=npm&label=CLI" alt="npm"></a>
   <a href="https://www.npmjs.com/package/uipro-cli"><img src="https://img.shields.io/npm/dm/uipro-cli?style=flat-square&label=downloads" alt="npm downloads"></a>
-  <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/stargazers"><img src="https://img.shields.io/github/stars/nextlevelbuilder/ui-ux-pro-max-skill?style=flat-square&logo=github" alt="GitHub stars"></a>
+  <a href="https://github.com/offsideAI/ui-ux-pro-ultimate-skill/stargazers"><img src="https://img.shields.io/github/stars/offsideAI/ui-ux-pro-ultimate-skill?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="https://paypal.me/uiuxpromax"><img src="https://img.shields.io/badge/PayPal-Support%20Development-00457C?style=flat-square&logo=paypal&logoColor=white" alt="PayPal"></a>
 </p>
 
@@ -19,7 +19,7 @@ An AI skill that provides design intelligence for building professional UI/UX ac
 
 <p align="center">
   <a href="https://uupm.cc">
-    <img src="screenshots/website.png" alt="UI UX Pro Max" width="800">
+    <img src="screenshots/website.png" alt="UI UX Pro Ultimate" width="800">
   </a>
 </p>
 
@@ -30,7 +30,7 @@ An AI skill that provides design intelligence for building professional UI/UX ac
 
 <p align="center">
   <i>Other projects</i><br>
-  <a href="https://nextlevelbuilder.io">NextLevelBuilder.io</a> | <a href="https://goclaw.sh">GoClaw.sh</a> | <a href="https://claudekit.cc">ClaudeKit.cc</a> | <a href="https://tose.sh">TOSE.sh</a>
+  <a href="https://offsideai.com">OffsideAI.com</a> | <a href="https://goclaw.sh">GoClaw.sh</a> | <a href="https://claudekit.cc">ClaudeKit.cc</a> | <a href="https://tose.sh">TOSE.sh</a>
 </p>
 
 ## What's New in v2.0
@@ -258,8 +258,8 @@ Each rule includes:
 Install directly in Claude Code with two commands:
 
 ```
-/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
-/plugin install ui-ux-pro-max@ui-ux-pro-max-skill
+/plugin marketplace add offsideAI/ui-ux-pro-ultimate-skill
+/plugin install ui-ux-pro-ultimate@ui-ux-pro-ultimate-skill
 ```
 
 ### Using CLI (Recommended)
@@ -350,7 +350,7 @@ Build a landing page for my SaaS product
 Use the slash command to invoke the skill:
 
 ```
-/ui-ux-pro-max Build a landing page for my SaaS product
+/ui-ux-pro-ultimate Build a landing page for my SaaS product
 ```
 
 ### Example Prompts
@@ -401,19 +401,19 @@ For direct access to the design system generator:
 
 ```bash
 # Generate design system with ASCII output
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "beauty spa wellness" --design-system -p "Serenity Spa"
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "beauty spa wellness" --design-system -p "Serenity Spa"
 
 # Generate with Markdown output
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "fintech banking" --design-system -f markdown
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "fintech banking" --design-system -f markdown
 
 # Domain-specific search
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "glassmorphism" --domain style
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "elegant serif" --domain typography
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "dashboard" --domain chart
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "glassmorphism" --domain style
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "elegant serif" --domain typography
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "dashboard" --domain chart
 
 # Stack-specific guidelines
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "form validation" --stack react
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "responsive layout" --stack html-tailwind
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "form validation" --stack react
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "responsive layout" --stack html-tailwind
 ```
 
 ### Persist Design System (Master + Overrides Pattern)
@@ -422,10 +422,10 @@ Save your design system to files for **hierarchical retrieval across sessions**:
 
 ```bash
 # Generate and persist to design-system/MASTER.md
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "SaaS dashboard" --design-system --persist -p "MyApp"
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "SaaS dashboard" --design-system --persist -p "MyApp"
 
 # Also create a page-specific override file
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "SaaS dashboard" --design-system --persist -p "MyApp" --page "dashboard"
+python3 .claude/skills/ui-ux-pro-ultimate/scripts/search.py "SaaS dashboard" --design-system --persist -p "MyApp" --page "dashboard"
 ```
 
 This creates a `design-system/` folder structure:
@@ -472,24 +472,24 @@ If you want to contribute to this project:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
-cd ui-ux-pro-max-skill
+git clone https://github.com/offsideAI/ui-ux-pro-ultimate-skill.git
+cd ui-ux-pro-ultimate-skill
 
 # 2. Understand the structure
-src/ui-ux-pro-max/           # Source of truth (data, scripts, templates)
+src/ui-ux-pro-ultimate/           # Source of truth (data, scripts, templates)
 cli/                         # CLI installer (generates files from templates)
 .claude/                     # Local dev/test for Claude Code skill
 .factory/                    # Local dev/test for Droid (Factory) skill
 
-# 3. Make changes in src/ui-ux-pro-max/
+# 3. Make changes in src/ui-ux-pro-ultimate/
 # - data/*.csv              → Database files
 # - scripts/*.py            → Search engine & design system
 # - templates/              → Platform-specific templates
 
 # 4. Sync to CLI and test locally
-cp -r src/ui-ux-pro-max/data/* cli/assets/data/
-cp -r src/ui-ux-pro-max/scripts/* cli/assets/scripts/
-cp -r src/ui-ux-pro-max/templates/* cli/assets/templates/
+cp -r src/ui-ux-pro-ultimate/data/* cli/assets/data/
+cp -r src/ui-ux-pro-ultimate/scripts/* cli/assets/scripts/
+cp -r src/ui-ux-pro-ultimate/templates/* cli/assets/templates/
 
 # 5. Build and test CLI
 cd cli && bun run build
@@ -506,7 +506,7 @@ See [CLAUDE.md](CLAUDE.md) for detailed development guidelines.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=nextlevelbuilder/ui-ux-pro-max-skill&type=Date)](https://star-history.com/#nextlevelbuilder/ui-ux-pro-max-skill&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=offsideAI/ui-ux-pro-ultimate-skill&type=Date)](https://star-history.com/#offsideAI/ui-ux-pro-ultimate-skill&Date)
 
 ## License
 

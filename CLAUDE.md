@@ -9,7 +9,7 @@ Antigravity Kit is an AI-powered design intelligence toolkit providing searchabl
 ## Search Command
 
 ```bash
-python3 src/ui-ux-pro-max/scripts/search.py "<query>" --domain <domain> [-n <max_results>]
+python3 src/ui-ux-pro-ultimate/scripts/search.py "<query>" --domain <domain> [-n <max_results>]
 ```
 
 **Domain search:**
@@ -23,14 +23,14 @@ python3 src/ui-ux-pro-max/scripts/search.py "<query>" --domain <domain> [-n <max
 
 **Stack search:**
 ```bash
-python3 src/ui-ux-pro-max/scripts/search.py "<query>" --stack <stack>
+python3 src/ui-ux-pro-ultimate/scripts/search.py "<query>" --stack <stack>
 ```
 Available stacks: `html-tailwind` (default), `react`, `nextjs`, `astro`, `vue`, `nuxtjs`, `nuxt-ui`, `svelte`, `swiftui`, `react-native`, `flutter`, `shadcn`, `jetpack-compose`
 
 ## Architecture
 
 ```
-src/ui-ux-pro-max/                # Source of Truth
+src/ui-ux-pro-ultimate/                # Source of Truth
 ├── data/                         # Canonical CSV databases
 │   ├── products.csv, styles.csv, colors.csv, typography.csv, ...
 │   └── stacks/                   # Stack-specific guidelines
@@ -47,13 +47,13 @@ cli/                              # CLI installer (uipro-cli on npm)
 │   ├── commands/init.ts          # Install command with template generation
 │   └── utils/template.ts         # Template rendering engine
 └── assets/                       # Bundled assets (~564KB)
-    ├── data/                     # Copy of src/ui-ux-pro-max/data/
-    ├── scripts/                  # Copy of src/ui-ux-pro-max/scripts/
-    └── templates/                # Copy of src/ui-ux-pro-max/templates/
+    ├── data/                     # Copy of src/ui-ux-pro-ultimate/data/
+    ├── scripts/                  # Copy of src/ui-ux-pro-ultimate/scripts/
+    └── templates/                # Copy of src/ui-ux-pro-ultimate/templates/
 
-.claude/skills/ui-ux-pro-max/     # Claude Code skill (symlinks to src/)
-.factory/skills/ui-ux-pro-max/   # Droid (Factory) skill (symlinks to src/)
-.shared/ui-ux-pro-max/            # Symlink to src/ui-ux-pro-max/
+.claude/skills/ui-ux-pro-ultimate/     # Claude Code skill (symlinks to src/)
+.factory/skills/ui-ux-pro-ultimate/   # Droid (Factory) skill (symlinks to src/)
+.shared/ui-ux-pro-ultimate/            # Symlink to src/ui-ux-pro-ultimate/
 .claude-plugin/                   # Claude Marketplace publishing
 ```
 
@@ -61,25 +61,25 @@ The search engine uses BM25 ranking combined with regex matching. Domain auto-de
 
 ## Sync Rules
 
-**Source of Truth:** `src/ui-ux-pro-max/`
+**Source of Truth:** `src/ui-ux-pro-ultimate/`
 
 When modifying files:
 
-1. **Data & Scripts** - Edit in `src/ui-ux-pro-max/`:
+1. **Data & Scripts** - Edit in `src/ui-ux-pro-ultimate/`:
    - `data/*.csv` and `data/stacks/*.csv`
    - `scripts/*.py`
    - Changes automatically available via symlinks in `.claude/`, `.factory/`, `.shared/`
 
-2. **Templates** - Edit in `src/ui-ux-pro-max/templates/`:
+2. **Templates** - Edit in `src/ui-ux-pro-ultimate/templates/`:
    - `base/skill-content.md` - Common SKILL.md content
    - `base/quick-reference.md` - Quick reference section (Claude only)
    - `platforms/*.json` - Platform-specific configs
 
 3. **CLI Assets** - Run sync before publishing:
    ```bash
-   cp -r src/ui-ux-pro-max/data/* cli/assets/data/
-   cp -r src/ui-ux-pro-max/scripts/* cli/assets/scripts/
-   cp -r src/ui-ux-pro-max/templates/* cli/assets/templates/
+   cp -r src/ui-ux-pro-ultimate/data/* cli/assets/data/
+   cp -r src/ui-ux-pro-ultimate/scripts/* cli/assets/scripts/
+   cp -r src/ui-ux-pro-ultimate/templates/* cli/assets/templates/
    ```
 
 4. **Reference Folders** - No manual sync needed. The CLI generates these from templates during `uipro init`.

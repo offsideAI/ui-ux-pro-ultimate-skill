@@ -19,12 +19,12 @@ const program = new Command();
 
 program
   .name('uipro')
-  .description('CLI to install UI/UX Pro Max skill for AI coding assistants')
+  .description('CLI to install UI/UX Pro Ultimate skill for AI coding assistants')
   .version(pkg.version);
 
 program
   .command('init')
-  .description('Install UI/UX Pro Max skill to current project')
+  .description('Install UI/UX Pro Ultimate skill to current project')
   .option('-a, --ai <type>', `AI assistant type (${AI_TYPES.join(', ')})`)
   .option('-f, --force', 'Overwrite existing files')
   .option('-o, --offline', 'Skip GitHub download, use bundled assets only')
@@ -50,7 +50,7 @@ program
 
 program
   .command('update')
-  .description('Update UI/UX Pro Max to latest version')
+  .description('Update UI/UX Pro Ultimate to latest version')
   .option('-a, --ai <type>', `AI assistant type (${AI_TYPES.join(', ')})`)
   .action(async (options) => {
     if (options.ai && !AI_TYPES.includes(options.ai)) {
@@ -65,7 +65,7 @@ program
 
 program
   .command('uninstall')
-  .description('Remove UI/UX Pro Max skill from current project or globally')
+  .description('Remove UI/UX Pro Ultimate skill from current project or globally')
   .option('-a, --ai <type>', `AI assistant type (${AI_TYPES.join(', ')})`)
   .option('-g, --global', 'Uninstall from home directory (~/) instead of current project')
   .action(async (options) => {

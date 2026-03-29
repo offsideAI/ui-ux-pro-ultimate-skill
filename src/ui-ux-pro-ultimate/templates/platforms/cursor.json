@@ -4,18 +4,18 @@
   "installType": "full",
   "folderStructure": {
     "root": ".cursor",
-    "skillPath": "skills/ui-ux-pro-max",
+    "skillPath": "skills/ui-ux-pro-ultimate",
     "filename": "SKILL.md"
   },
-  "scriptPath": "skills/ui-ux-pro-max/scripts/search.py",
+  "scriptPath": "skills/ui-ux-pro-ultimate/scripts/search.py",
   "frontmatter": {
-    "name": "ui-ux-pro-max",
+    "name": "ui-ux-pro-ultimate",
     "description": "Comprehensive design guide for web and mobile applications. Contains 67 styles, 161 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 16 technology stacks."
   },
   "sections": {
     "quickReference": false
   },
-  "title": "ui-ux-pro-max",
+  "title": "ui-ux-pro-ultimate",
   "description": "Comprehensive design guide for web and mobile applications. Contains 67 styles, 161 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 16 technology stacks. Searchable database with priority-based recommendations.",
   "skillOrWorkflow": "Skill"
 }

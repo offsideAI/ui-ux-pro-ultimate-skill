@@ -4,18 +4,18 @@
   "installType": "full",
   "folderStructure": {
     "root": ".github",
-    "skillPath": "prompts/ui-ux-pro-max",
+    "skillPath": "prompts/ui-ux-pro-ultimate",
     "filename": "PROMPT.md"
   },
-  "scriptPath": "prompts/ui-ux-pro-max/scripts/search.py",
+  "scriptPath": "prompts/ui-ux-pro-ultimate/scripts/search.py",
   "frontmatter": {
-    "name": "ui-ux-pro-max",
+    "name": "ui-ux-pro-ultimate",
     "description": "Comprehensive design guide for web and mobile applications. Contains 67 styles, 161 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 15 technology stacks."
   },
   "sections": {
     "quickReference": false
   },
-  "title": "ui-ux-pro-max",
+  "title": "ui-ux-pro-ultimate",
   "description": "Comprehensive design guide for web and mobile applications. Contains 67 styles, 161 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 15 technology stacks. Searchable database with priority-based recommendations.",
   "skillOrWorkflow": "Workflow"
 }

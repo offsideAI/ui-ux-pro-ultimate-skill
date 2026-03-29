@@ -1,6 +1,6 @@
 # uipro-cli
 
-CLI to install UI/UX Pro Max skill for AI coding assistants.
+CLI to install UI/UX Pro Ultimate skill for AI coding assistants.
 
 ## Installation
 

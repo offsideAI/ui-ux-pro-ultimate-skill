@@ -115,7 +115,7 @@ async function templateInstall(
 }
 
 export async function initCommand(options: InitOptions): Promise<void> {
-  logger.title('UI/UX Pro Max Installer');
+  logger.title('UI/UX Pro Ultimate Installer');
 
   let aiType = options.ai;
 
@@ -198,7 +198,7 @@ export async function initCommand(options: InitOptions): Promise<void> {
     });
 
     console.log();
-    logger.success('UI/UX Pro Max installed successfully!');
+    logger.success('UI/UX Pro Ultimate installed successfully!');
 
     // Next steps
     console.log();

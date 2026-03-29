@@ -22,11 +22,11 @@ async function removeSkillDir(baseDir: string, aiType: Exclude<AIType, 'all'>): 
   const removed: string[] = [];
 
   for (const folder of folders) {
-    const skillDir = join(baseDir, folder, 'skills', 'ui-ux-pro-max');
+    const skillDir = join(baseDir, folder, 'skills', 'ui-ux-pro-ultimate');
     try {
       await stat(skillDir);
       await rm(skillDir, { recursive: true, force: true });
-      removed.push(`${folder}/skills/ui-ux-pro-max`);
+      removed.push(`${folder}/skills/ui-ux-pro-ultimate`);
     } catch (err: unknown) {
       // Skip non-existent dirs; re-throw permission or other errors
       if ((err as NodeJS.ErrnoException).code !== 'ENOENT') throw err;
@@ -37,7 +37,7 @@ async function removeSkillDir(baseDir: string, aiType: Exclude<AIType, 'all'>): 
 }
 
 export async function uninstallCommand(options: UninstallOptions): Promise<void> {
-  logger.title('UI/UX Pro Max Uninstaller');
+  logger.title('UI/UX Pro Ultimate Uninstaller');
 
   const isGlobal = !!options.global;
   const baseDir = isGlobal ? homedir() : process.cwd();
@@ -84,7 +84,7 @@ export async function uninstallCommand(options: UninstallOptions): Promise<void>
   const { confirmed } = await prompts({
     type: 'confirm',
     name: 'confirmed',
-    message: `Remove UI/UX Pro Max skill for ${chalk.cyan(getAITypeDescription(aiType))} from ${locationLabel}?`,
+    message: `Remove UI/UX Pro Ultimate skill for ${chalk.cyan(getAITypeDescription(aiType))} from ${locationLabel}?`,
     initial: false,
   });
 
@@ -123,7 +123,7 @@ export async function uninstallCommand(options: UninstallOptions): Promise<void>
     });
 
     console.log();
-    logger.success('UI/UX Pro Max uninstalled successfully!');
+    logger.success('UI/UX Pro Ultimate uninstalled successfully!');
     console.log();
   } catch (error) {
     spinner.fail('Uninstall failed');
